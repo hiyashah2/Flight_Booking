@@ -1,0 +1,336 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.global-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 1.5em;
+  color: white;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+header {
+  text-align: center;
+  background-color: #f8f8f8;
+  background-image: url("images/image.png");
+  background-size: cover;
+  padding: 100px 0;
+  border-radius: 15px;
+  position: relative;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 28px;
+  color: #555;
+}
+
+.menu-button {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 20; /* Ensure menu button is above other content */
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 30; /* Ensure sidenav is above other content */
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 8px 10px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.destinations, .airlines {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.airlines {
+  margin-bottom: 60px; /* Add gap between airlines and footer */
+}
+
+.destination, .airline {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  flex: 0 0 auto;
+}
+
+.destination:hover::after, .airline:hover::after {
+  content: attr(data-hover);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0ebf4;
+  color: #000000;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.destination img, .airline img {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.destination:hover img, .airline:hover img {
+  transform: scale(1.05);
+}
+
+.booking-form {
+  background-color: #f0ebf4;
+  padding: 20px;
+  border-radius: 50px;
+  margin: 0 auto;
+  max-width: 1100px;
+  align-self: center;
+  position: relative;
+  top: -40px; /* Adjust this value as needed to overlap the header */
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.booking-form form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.form-group {
+  margin: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  background-color: #2f4454;
+  color: white;
+  border: none;
+  padding: 12px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 1;
+  max-width: 80px;
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.search-button:hover {
+  background-color: #007BFF;
+}
+
+.arrow-button {
+  background-color: #2f4454;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20; /* Ensure arrows are above other content */
+}
+
+.left-arrow {
+  left: 30px;
+  top: 1140px;
+}
+
+.right-arrow {
+  right: 30px;
+  top: 1140px;
+}
+
+footer {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 40px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add drop shadow to footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.app-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-family: 'Trattatello', fantasy; /* Change to the desired font family */
+  color: black;
+  font-size: 45px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 25px;
+  width: 300px;
+}
+
+.nav-button {
+  background-color: #f0ebf4;
+  color: black;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.searchh-button {
+  width: 140px; /* Adjust width for Search button */
+  height: 40px; /* Adjust height for Search button */
+  padding: 0 20px;
+}
+
+.sign-in-button {
+  width: 140px; /* Adjust width for Sign In button */
+  height: 40px; /* Adjust height for Sign In button */
+  padding: 0 20px;
+}
+
+.nav-button:hover {
+  background-color: #2f4454;
+}

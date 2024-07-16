@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your site's description should be here">
+    <meta name="keywords" content="Your site's keywords should be here">
+    <title>SkyAura Flight Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+    <![endif]-->
+</head>
+<body>
+    <div class="global-container">
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="images/layer_1.png" alt="Logo" class="logo">
+                <span class="site-name">SkyAura</span>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-button searchh-button">Search</button>
+                <button class="nav-button sign-in-button">Sign In</button>
+            </div>
+        </div>
+        <header>
+            <div class="menu-button" onclick="toggleNav()">&#9776;</div>
+            <div class="header-content">
+                <h1 font-size>Book your flights with SkyAura</h1>
+                <p>Discover 1,480,086 flights worldwide just for you!</p>
+            </div>
+        </header>
+        <main>
+            <section class="booking-form">
+                <form>
+                    <div class="form-group">
+                        <label for="departure">Departure</label>
+                        <input type="text" id="departure" placeholder="Where are you flying from?" />
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-date">Departure Date</label>
+                        <input type="date" id="departure-date" />
+                    </div>
+                    <div class="form-group">
+                        <label for="travellers">Travellers</label>
+                        <input type="number" id="travellers" placeholder="Number of Travellers" />
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Return Date</label>
+                        <input type="date" id="return-date" />
+                    </div>
+                    <button type="submit" class="search-button">⮕</button>
+                </form>
+            </section>
+            <h2>Popular destinations for you</h2>
+            <section class="destinations">
+                <div class="destination" data-hover="Tokyo">
+                    <img src="images/tokyo t.jpeg" alt="Tokyo" width="360" height="300" />
+                </div>
+                <div class="destination" data-hover="Maldives">
+                    <img src="images/maldives t.jpeg" alt="Maldives" width="360" height="300" />
+                </div>
+                <div class="destination" data-hover="Dubai">
+                    <img src="images/dubai t.jpg" alt="Dubai" width="360" height="300" />
+                </div>
+                <div class="destination" data-hover="Sydney">
+                    <img src="images/sydney-min.png" alt="Sydney" width="360" height="300" />
+                </div>
+                <div class="destination" data-hover="New York">
+                    <img src="images/new york t.jpg" alt="New York" width="360" height="300" />
+                </div>
+            </section>
+            <button class="arrow-button left-arrow" onclick="scrollToPrevious('destinations')">&#10094;</button>
+            <button class="arrow-button right-arrow" onclick="scrollToNext('destinations')">&#10095;</button>
+            <h2>Top-rated airlines by travellers</h2>
+            <section class="airlines">
+                <div class="airline" data-hover="Skyline Airlines">
+                    <img src="images/skyline-min.png" alt="Skyline Airlines" />
+                    <p>Skyline Airlines - from $200/flight</p>
+                </div>
+                <div class="airline">
+                    <img src="images/global-min.png" alt="Global Airways" />
+                    <p>Global Airways - from $250/flight</p>
+                </div>
+                <div class="airline">
+                    <img src="images/sunset-min.png" alt="Sunset Airlines" />
+                    <p>Sunset Airlines - from $280/flight</p>
+                </div>
+                <div class="airline">
+                    <img src="images/dreamliner-min.png" alt="Dreamliner Airways" />
+                    <p>Dreamliner Airways - from $300/flight</p>
+                </div>
+                <div class="airline">
+                    <img src="images/aurora-min.png" alt="Aurora Airlines" />
+                    <p>Aurora Airlines - from $320/flight</p>
+                </div>
+            </section>
+            <button class="arrow-button left-arrow" onclick="scrollToPrevious('airlines')">&#10094;</button>
+            <button class="arrow-button right-arrow" onclick="scrollToNext('airlines')">&#10095;</button>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Mobile</li>
+                        <li>How we work</li>
+                        <li>Coupon Codes</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Help/FAQ</li>
+                        <li>Press</li>
+                        <li>Affiliates</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>More</h2>
+                    <ul>
+                        <li>Airline fees</li>
+                        <li>Airlines</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Get the SkyAura App</h2>
+                    <div class="app-links">
+                        <img src="images/layer_2.png" alt="App Store" />
+                        <img src="images/layer_3.png" alt="Google Play" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="#"><img src="icons/flights.png" alt="Flights" class="nav-icon" height="40px">Flights</a>
+        <a href="#"><img src="icons/stays.png" alt="Stays" class="nav-icon" height="35px">Stays</a>
+        <a href="#"><img src="icons/car_rentals.png" alt="Car Rentals" class="nav-icon" height="35px">Car Rentals</a>
+        <a href="#"><img src="icons/trains.png" alt="Trains" class="nav-icon" height="40px">Trains</a>
+        <a href="#"><img src="icons/explore2.png" alt="Explore" class="nav-icon" height="40px">Explore</a>
+    </div>
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById("mySidenav");
+            if (nav.style.width === "250px") {
+                nav.style.width = "0";
+            } else {
+                nav.style.width = "250px";
+            }
+        }
+
+        function scrollToNext(sectionClass) {
+            const section = document.querySelector(`.${sectionClass}`);
+            section.scrollLeft += 300;
+        }
+
+        function scrollToPrevious(sectionClass) {
+            const section = document.querySelector(`.${sectionClass}`);
+            section.scrollLeft -= 300;
+        }
+    </script>
+</body>
+</html>
