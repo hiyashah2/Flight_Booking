@@ -15,7 +15,6 @@ This assignment was both fun and challenging, allowing me to implement my creati
   - Both designs allowed me to freely implement my creativity using Photoshop.
 - **HTML/CSS Implementation:**
   - One of the designs was implemented using HTML and CSS, ensuring image optimization and responsiveness.
-  - Although I am not very proficient in HTML/CSS, I believe I can learn quickly and efficiently.
 
 ## Conclusion
 This assignment was an interesting and educational experience. I hope to become a part of Odysseus Solutions and contribute to creating exceptional digital experiences. Regardless of the outcome, I have gained valuable knowledge and skills from this project.
