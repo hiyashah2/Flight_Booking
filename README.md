@@ -15,6 +15,7 @@ This assignment was both fun and challenging, allowing me to implement my creati
   - Both designs allowed me to freely implement my creativity using Photoshop.
 - **HTML/CSS Implementation:**
   - One of the designs was implemented using HTML and CSS, ensuring image optimization and responsiveness.
+  - Included various elements such as header, footer, navbar, horizontal scrollbar, hovering, etc.
 
 ## Conclusion
 This assignment was an interesting and educational experience, I have gained valuable knowledge and skills from this project.
