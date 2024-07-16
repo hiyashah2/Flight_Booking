@@ -1,4 +1,4 @@
-# UI/UX Assignment for Odysseus Solutions
+# UI/UX Assignment
 
 ## Overview
 This assignment was both fun and challenging, allowing me to implement my creativity while learning many new skills. I designed and developed variations of a home page for an air ticket booking system, focusing on both aesthetics and functionality.
@@ -17,4 +17,4 @@ This assignment was both fun and challenging, allowing me to implement my creati
   - One of the designs was implemented using HTML and CSS, ensuring image optimization and responsiveness.
 
 ## Conclusion
-This assignment was an interesting and educational experience. I hope to become a part of Odysseus Solutions and contribute to creating exceptional digital experiences. Regardless of the outcome, I have gained valuable knowledge and skills from this project.
+This assignment was an interesting and educational experience, I have gained valuable knowledge and skills from this project.
